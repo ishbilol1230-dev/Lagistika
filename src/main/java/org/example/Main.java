@@ -12,7 +12,7 @@ public class Main {
             // Telegram bots API ni ishga tushirish
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
 
-            // Botni ro'yxatdan o'tkazish
+
             BotService bot = new BotService();
             botsApi.registerBot(bot);
 

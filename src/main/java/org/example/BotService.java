@@ -38,7 +38,6 @@ public class BotService extends TelegramLongPollingBot {
     // Adminlar
     private final List<Long> ADMIN_IDS = Arrays.asList(7038296036L);
 
-    // To'lov karta raqami
     private final String PAYMENT_CARD = "5614 6825 1378 8143\nKarta egasi: Jumaev.S";
 
     // Viloyatlar
@@ -1548,7 +1547,7 @@ public class BotService extends TelegramLongPollingBot {
                             sendMessage(userId, "❌ Yuk e'loningiz topilmadi. Iltimos, qayta e'lon bering.");
                         }
                     }
-                }
+               }//Yuk bot
             } else if ("telegram_reklama".equals(type)) {
                 sendMessage(userId, "✅ To'lovingiz tasdiqlandi! Telegram reklama paketingiz faollashtirildi Asosiy gruh @Yuklar_bormi.");
                 sendMessage(adminId, "✅ Telegram reklama tasdiqlandi! Foydalanuvchi: " + userId);
